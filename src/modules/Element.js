@@ -3,14 +3,14 @@
     'use strict';
 
     var Element = function (data) {
-        var $element = $('<li />');
+        var $element = $('<li />').addClass('list-group-item');
 
-        $element.append($('<span />').html(data.name));
-        $element.append($('<span />').html(data.title));
+        $element.append($('<h2 />').html(data.name).addClass('list-group-item-heading'));
+        $element.append($('<p />').html(data.title).addClass('list-group-item-text'));
         $element.append($('<img />').attr(
             {
                 alt: data.name,
-                src: data.pic
+                src: '//test.kocsan.hu/jstf/' + data.pic
             }
         ));
 

@@ -13,10 +13,10 @@ describe('Model', function () {
         afterEach(function () {
             jQuery.ajax.restore();
         });
-        it('should call test.kocsan.hu/attendees.json', function (done) {
+        it('should call test.kocsan.hu/jstf/attendees.json', function (done) {
             eventPublisher.publish('listRequest', function () {
                 sinon.assert.calledOnce(jQuery.ajax);
-                sinon.assert.calledWithMatch(jQuery.ajax, {url: '//test.kocsan.hu/attendees.json'});
+                sinon.assert.calledWithMatch(jQuery.ajax, {url: '//test.kocsan.hu/jstf/attendees.json'});
                 done();
             });
         });

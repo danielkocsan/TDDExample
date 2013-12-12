@@ -15,7 +15,7 @@
     Model.prototype.onListRequest = function () {
         $.ajax(
             {
-                url: '//test.kocsan.hu/attendees.json'
+                url: '//test.kocsan.hu/jstf/attendees.json'
             }
         ).done(this.onAjaxDone.bind(this));
     };

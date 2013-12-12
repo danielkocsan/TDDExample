@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Peter Zsilak",
+        "title": "Software Testing Engineer",
+        "pic": "attendees_peter_zsilak.jpg"
+    },
+    {
+        "name": "Peter Dobrosi",
+        "title": "Senior Software Test Automation Engineer",
+        "pic": "attendees_peter_dobrosi.jpg"
+    },
+    {
+        "name": "Laszlo Dunai",
+        "title": "Senior Software Test Automation Engineer",
+        "pic": "attendees_laszlo_dunai.jpg"
+    },
+    {
+        "name": "Krisztian Foldvari",
+        "title": "Senior Software Engineer",
+        "pic": "attendees_krisztian_foldvari.jpg"
+    },
+    {
+        "name": "Kristof_Varnai",
+        "title": "Software Test Automation Engineer",
+        "pic": "attendees_kristof_varnai.jpg"
+    },
+    {
+        "name": "Kornel Schrenk",
+        "title": "Software Engineering Team Leader",
+        "pic": "attendees_kornel_schrenk.jpg"
+    },
+    {
+        "name": "Igor Mucsicska",
+        "title": "Software Engineer",
+        "pic": "attendees_igor_mucsicska.jpg"
+    },
+    {
+        "name": "Gergo Istvan Nagy",
+        "title": "Software Engineer",
+        "pic": "attendees_gergo_istvan_nagy.jpg"
+    },
+    {
+        "name": "Barnabas Tarkovacs",
+        "title": "Graphic Designer",
+        "pic": "attendees_barnabas_tarkovacs.jpg"
+    },
+    {
+        "name": "Attila Salamon",
+        "title": "Software Engineer",
+        "pic": "attendees_attila_salamon.jpg"
+    },
+    {
+        "name": "Andras Kapros",
+        "title": "Graphic Designer",
+        "pic": "attendees_andras_kapros.jpg"
+    },
+    {
+        "name": "Daniel Kocsan",
+        "title": "Graphic Designer",
+        "pic": "attendees_daniel_kocsan.jpg"
+    },
+    {
+        "name": "Eva Szilagyi",
+        "title": "Administrative Assistant",
+        "pic": "attendees_eva_szilagyi.jpg"
+    }
+]

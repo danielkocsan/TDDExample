@@ -1,21 +1,36 @@
-/*global $, document, describe, it, chai */
+/*global $, document, describe, it, runs, waitsFor, chai, controller */
 describe('Attendees list', function () {
     'use strict';
 
-    var $placeHolder = $('#mocha'),
-        $fixtureRefreshButton = $placeHolder.append('<button id="refresh"></button>'),
-        $fixtureAttendeesList = $placeHolder.append('<div id="attendeesList"></div>'),
+    var $placeHolder = $('body'),
+        $fixtureRefreshButton = $('<button id="refresh"></button>'),
+        $fixtureAttendeesList = $('<ul id="attendeesList"></ul>'),
         $doc = $(document);
 
+    $placeHolder.append($fixtureAttendeesList);
+    $placeHolder.append($fixtureRefreshButton);
+
     describe('when I push the refresh button', function () {
-        it('should appear within 500ms', function (done) {
-            this.timeout(500);
-            $doc.on('attendeesListDone', function () {
-                chai.assert.isTrue($fixtureAttendeesList.children().length > 5);
-                done();
+        it('should appear within 5000ms', function () {
+            var done = false;
+
+            controller.init($fixtureRefreshButton, $fixtureAttendeesList);
+
+            runs(function () {
+                $doc.on('attendeesListDone', function () {
+                    done = true;
+                });
+
+                $fixtureRefreshButton.trigger('click');
             });
 
-            $fixtureRefreshButton.trigger('click');
+            waitsFor(function () {
+                return done;
+            });
+
+            runs(function () {
+                chai.assert.isTrue($fixtureAttendeesList.children().length > 5);
+            });
         });
     });
 });
