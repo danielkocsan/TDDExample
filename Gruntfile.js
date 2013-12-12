@@ -50,7 +50,6 @@ module.exports = function (grunt) {
         }
     );
 
-    grunt.loadNpmTasks('grunt-mocha');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-contrib-watch');
