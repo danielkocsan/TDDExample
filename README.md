@@ -1,4 +1,4 @@
-TDD stup steps
+TDD setup steps
 ==================
 - Install Node.js http://nodejs.org/
 - npm install
